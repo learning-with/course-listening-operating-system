@@ -31,15 +31,52 @@ Thread, Single and Multithreaded Processes, Benefits of Threads, Inplemetation o
 프로세스 생성(Process Creation), 프로세스와 관련한 시스템콜, 프로세스 간 협력, Message Passing, Interprocess communication, CPU and I/O Bursts in Program Execution, CPU-brust Time의 분포, 프로세스의 특성 분류, CPU Scheduler & Dispatcher
 
 ### 5. CPU Scheduling
+#### 5.1.
+CPU and I/O Bursts in Program Execution, CPU-burst Time의 분포, CPU Scheduler & Dispatcher, Scheduling Algorithms, Scheduling Criteria, FCFS(First-Come First-Served), SJF(Shortest-job-First), Example of Non-Preemptive SJF, Example of Preemptive SJF, 다음 CPU Burst Time의 예측, Exponential Averaging, Priority Scheduling, Round Robin(RR), Example: RR with Time Quantum = 20, Turmaround Time Varies With Time Quantum
+#### 5.2.
+CPU-burst Time의 분포, Schedulling Algorithms, Round Robin(RR), Multilevel Queue, Multilevel Feedback Queue, Multi-Processor Scheduling, Real-time Scheduling, Example of Non-Preemptive SJF, Thread Scheduling, Algorithm Evaluation, 39:12
 
 ### 6. Process Synchoronization
+#### 6.1.
+데이터의 접근, Race Condition, OS에서의 race condition(3/3), Example of a Race Condition, The Critical-Section Problem, OS에서 race condition(1/3), If you preempt CPU while in kernel mode…, Initial Attempts to Solve Problem, 프로그램적 해결법의 충족조건, Algorithm 1, Algorithm2, Algorithm3(Peterson's Algorithm), Synchronization Hardware, Semaphores
+#### 6.2.
+Semaphores, Critical Section of n Processes, Block / Wakeup Implementation, Implementation, Two Types of Semaphores, Deadlock and Starvation, Dining-Philosophers Problem
+#### 6.3.
+Semaphores, Implementation, Classical Problems of Syncronization, Bounded-Buffer Problem, Readers-Writers Problem, Dining-Philosophers Problem, Monitor
+#### 6.4.
+Semaphores, Monitor, Bounded-Buffer Problem, Dining Philosophers Example
 
 ### 7. Deadlocks
+#### 7.1.
+교착상태(deadlock), The Deadlock Problem, Deadlock 발생의 4가지 조건, Resource-Allocation Graph(자원할당그래프), Deadlock Prevention, Deadlock의 처리 방법, Deadlock Avoidance, Resource Allocation Graph algorithm, Banker's Algorithm, Example of Banker's Algorithm
+#### 7.2.
+Deadlock의 처리 방법, Deadlock Avoidance, Example of Banker's Algorithm, p1 request(1, 0, 2), Deadlock Detection and Recovery, Deadlock Ignorance
 
 ### 8. Memory Management
+#### 8.1.
+Logical vs. Physical Address, 주소바인딩(Address Binding), Memory-Management Unit(MMU), Dynamic Relocation, Hadware Support for Address Translation, Some Treminologies, Dynamic Loading, Overlays, Swapping, Dynamic Linking, Allocation of Physical Memory, Contiguous Allocation, Paging
+#### 8.2.
+Paging, Dynamic Relocation, Paging Example, Address Translation Architecture, Implementation of Page Table, Paging Hardware with TLB, Associative Register, Effective Access Time, Two-Level Page Table, Address-Translation Scheme, Two-Level Paging Example
+#### 8.3.
+Multilevel Paging and Performance, Two-Level Page Table, Valid (v)/ Invalid (i) Bit in a Page Table, Memory Protection, Inverted Page Table, Inverted Page Table Architecture, Shared Page, Shared Pages Example, Segmentation, Segmentation Architecture, Segmentataion Hardware
+#### 8.4.
+Segmentation, Segmentation Hardware, Segmentation Architecture, Example of Segmetation, Segmentation Architecture(Cont.), Sharing of Segments, Segmentation with Paging, Address Translation Architecture
 
 ### 9. Virtual Memory
+#### 9.1.
+Demand Paging, Memory에 없는 Page의 Page Table, Page Fault, Steps in Handling a Page Fault, Performance of Demand Paging, Free Frame이 없는 경우, Page Replacement, Optimal Algorithm, FIFO(First In First Out) Algorithm, LRU(Least Recently Used) Algorithm, LFU(Least Frequently Used) Algorithm, LRU와 LFU 알고리즘 예제, LRU와 LFU 알고리즘의 구현, 다양한 캐슁 환경
+#### 9.2.
+다양한 캐슁 환경, LRU와 LFU 알고리즘의 구현, Paging System에서 LRU, LFU 가능한가?, Clock Algorithm, Page Frame의 Allocation, Global vs. Local Replacement, Thrashing, Thrashing Diagram, Working-Set Model, Working-Set Algorithm, PFF(Page-Fault Frequency) Scheme, Page Size의 결정
 
 ### 10. File Systems
+File and File System, Directory and Logical Disk, open( ), File Protection, File System의 Mounting, Access Methods
+#### 10.1. File Systems Implementation 1
+Allocation of File Data in Disk, Contiguous Allocation, Linked Allocation, Indexed Allocation, UNIX 파일시스템의 구조, FAT File System, Free-Space Management, Directory Implementation, VFS and NFS, Page Cache and Buffer Cache
+#### 10.2. File Systems Implementation 2
+Page Cache and Buffer Cache, 프로그램의 실행
 
 ### 11. Disk Management and Scheduling
+#### 11.1.
+Disk Structure, Disk Scheduling, Disk Management, Disk Scheduling Algorithm, FCFS(First Come First Service), SSTF(Shortest Seek Time First), SCAN, C-SCAN, Other Algorithms, Disk-Scheduling Algorithm의 결정
+#### 11.2.
+Swap-Space Management, RAID
